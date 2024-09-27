@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: rgb(32, 201, 151);
+}
+
+
+body {
+    font-family: "poppins", "sans-serif";
+    color: var(--primary-color) !important;
+    list-style: none;
+
+}
+
+/*start navbar*/
+.w10 {
+    width: 10%;
+}
+
+.nav-color {
+    background-color: black;
+}
+
+.nav-link:hover {
+
+    color: var(--secondary-color) !important;
+    transition: 0.3s all;
+}
+
+.nav-link.active,
+.active {
+    color: var(--secondary-color) !important;
+
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.face:hover {
+    color: blue !important;
+    transition: 0.3s all;
+}
+
+.tweet:hover {
+    color: aqua !important;
+    transition: 0.3s all;
+}
+
+.drib:hover {
+    color: rgb(251, 3, 156) !important;
+    transition: 0.3s all;
+}
+
+.google:hover {
+    color: rgb(187, 21, 21) !important;
+    transition: 0.3s all;
+}
+
+.github:hover {
+    color: rgb(0, 0, 0) !important;
+    transition: 0.3s all;
+}
+
+.background-text {
+    color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/intro-bg\ .jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+
+
+}
+
+.home__arrow--click {
+    position: relative;
+    cursor: pointer;
+    margin-top: 80px;
+    transition: all .1s ease-in;
+    animation: ar_down 3s normal linear infinite;
+}
+
+@keyframes ar_down {
+
+    0% {
+        top: 0;
+        opacity: 0.25;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        top: 5%;
+        opacity: 0.75;
+    }
+
+    100% {
+        top: 10%;
+        opacity: 1;
+    }
+}
+
+/* h2 underlines*/
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00d1b2;
+    /* Change this value to set the underline color */
+}
+
+.worklinks a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #00d1b2;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.worklinks a:hover::after,
+.worklinks a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.h-650{
+    height: 650px;
+}
+.h-850{
+    height: 850px;
+}
